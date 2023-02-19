@@ -38,7 +38,7 @@ public class TemaController {
     public ResponseEntity<List<Tema>> getByTitle(@PathVariable
                                                  String descricao){
         return ResponseEntity.ok(temaRepository
-                .findAllByDescrisaoContainingIgnoreCase(descricao));
+                .findAllByDescricaoContainingIgnoreCase(descricao));
     }
 
     @PostMapping
