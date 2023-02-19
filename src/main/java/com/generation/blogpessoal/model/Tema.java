@@ -18,7 +18,7 @@ public class Tema {
 
 
     @NotNull(message = "O Atributo Descrisão é obrigatorio")
-    private String descrisao;
+    private String descricao;
 
     @OneToMany(mappedBy = "tema",cascade = CascadeType.REMOVE)
     @JsonIgnoreProperties("tema")
@@ -41,11 +41,11 @@ public class Tema {
         this.id = id;
     }
 
-    public String getDescrisao() {
-        return descrisao;
+    public String getDescricao() {
+        return descricao;
     }
 
-    public void setDescrisao(String descrisao) {
-        this.descrisao = descrisao;
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
     }
 }
