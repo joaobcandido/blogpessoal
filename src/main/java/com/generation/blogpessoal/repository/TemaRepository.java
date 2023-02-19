@@ -9,6 +9,6 @@ import java.util.List;
 @Repository
 public interface TemaRepository extends JpaRepository<Tema, Long> {
 
-    //query metodo = select * tb_temas where descrisao like "%descrisao%;
-    public List<Tema> findAllByDescrisaoContainingIgnoreCase(@Param("descrisao")String descrisao);
+    //query metodo = select * tb_temas where descricao like "%descricao%;
+    public List<Tema> findAllByDescricaoContainingIgnoreCase(@Param("descricao")String descricao);
 }
